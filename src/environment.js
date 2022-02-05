@@ -1,0 +1,1 @@
+export const medium = process.env.REACT_APP_MEDIUM_KEY;

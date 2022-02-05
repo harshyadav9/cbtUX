@@ -1,0 +1,232 @@
+{
+    "instCd": "I001",
+    "year": 2021,
+    "candidateName": "Name1",
+    "durationHr": 0,
+    "durationMin": 0,
+    "dateOfExam": "1986-02-09",
+    "photo": "Location of photo",
+    "registrationNo": 1,
+    "answeredFlagsCount": [
+        3,
+        9,
+        10,
+        19
+    ],
+    "unansweredFlagsCount": [],
+    "reviewAnsweredFlagsCount": [],
+    "reviewUnansweredFlagsCount": [],
+    "questionList": [
+        {
+            "questionNo": 1,
+            "question": "The First Muslim invader of India was ",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Mohammed-bin-Quasim ",
+            "option2": "B- Mohammed-bin-Tuglak ",
+            "option3": "C- Mohammed Gauri ",
+            "option4": "D- Mohammed Ghazni"
+        },
+        {
+            "questionNo": 2,
+            "question": "The ultraviolet radiations from the sun may cause skin cancer. Which sphere of the earth’s atmosphere protects the earth from these dangers ultraviolet radiations of the sun?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Stratosphere",
+            "option2": "B- Ozonosphere",
+            "option3": "C- Ionosphere",
+            "option4": "D- Troposphere"
+        },
+        {
+            "questionNo": 3,
+            "question": "The Thummalapalle mine, which is considered to have world’s largest reserve of Uranium, is located in which of the following States?",
+            "selectedAnswer": "A",
+            "multiple": "N",
+            "option1": "A- Karnataka",
+            "option2": "B- Tamil Nadu",
+            "option3": "C- Kerala",
+            "option4": "D- Andhra Pradesh"
+        },
+        {
+            "questionNo": 4,
+            "question": "Who among the following repealed the Vernacular Press Act ?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Lord Dufferin",
+            "option2": "B- Lord Ripon",
+            "option3": "C- Lord Curzon",
+            "option4": "D- Lord Hardinge"
+        },
+        {
+            "questionNo": 5,
+            "question": "‘Chhau’ dance is a form of dancing found in",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Bihar",
+            "option2": "B- Uttar Pradesh",
+            "option3": "C- Maharashtra",
+            "option4": "D- West Bengal"
+        },
+        {
+            "questionNo": 6,
+            "question": "Dronacharya Award is given for excellence in ",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Literary work",
+            "option2": "B- Social service",
+            "option3": "C-Coaching in sports",
+            "option4": "D-Journalism"
+        },
+        {
+            "questionNo": 7,
+            "question": "Where was “Azad hind Fauj” Constituted?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Malaysia",
+            "option2": "B- Japan",
+            "option3": "C- Burma ",
+            "option4": "D- Singapore"
+        },
+        {
+            "questionNo": 8,
+            "question": "Lord Buddha was born in ",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Bodh Gaya ",
+            "option2": "B- Rajagriha",
+            "option3": "C- Lumbini ",
+            "option4": "D- Vaishali"
+        },
+        {
+            "questionNo": 9,
+            "question": "‘No Tobacco Day’ is observed on ",
+            "selectedAnswer": "D",
+            "multiple": "Y",
+            "option1": "A- 20th May ",
+            "option2": "B- 22nd May ",
+            "option3": "C- 25th May ",
+            "option4": "D- 31st May"
+        },
+        {
+            "questionNo": 10,
+            "question": "Which of the private telecom operator became the first to introduce 3G services in the country?",
+            "selectedAnswer": "C",
+            "multiple": "N",
+            "option1": "A- Airtel ",
+            "option2": "B- DOCOMO ",
+            "option3": "C- IDEA ",
+            "option4": "D- Vodafone "
+        },
+        {
+            "questionNo": 11,
+            "question": "Which of the private telecom operator became the first to introduce 3G services in the country?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Airtel ",
+            "option2": "B- DOCOMO ",
+            "option3": "C- IDEA ",
+            "option4": "D- Vodafone "
+        },
+        {
+            "questionNo": 12,
+            "question": "Which of the following terms is used in Banking?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Epicenter ",
+            "option2": "B- Pascal’s Law ",
+            "option3": "C- Currency ",
+            "option4": "D- Centre of Gravity"
+        },
+        {
+            "questionNo": 13,
+            "question": "In which one of the following States is Sabari mala temple located?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Tamil Nadu ",
+            "option2": "B- Andhra Pradesh ",
+            "option3": "C- Kerala ",
+            "option4": "D- Karnataka "
+        },
+        {
+            "questionNo": 14,
+            "question": "Which of the following schemes of the Govt. of india is associated with the health sector?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- NRDP ",
+            "option2": "B- IRDP ",
+            "option3": "C- ASHA ",
+            "option4": "D- Bharat Nirman"
+        },
+        {
+            "questionNo": 15,
+            "question": "Indian folk theatre has myriad regional forms, which form belongs where?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Tamasha ",
+            "option2": "B- Karnataka",
+            "option3": "C- Jatra  ",
+            "option4": "D- Gujarat"
+        },
+        {
+            "questionNo": 16,
+            "question": "Who among the following was famous for establishing an elaborate system of municipal administration?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Chandragupta Maurya ",
+            "option2": "B- Chandragupta Viukramaditya",
+            "option3": "C- Harshavardhana ",
+            "option4": "D- Kanishka"
+        },
+        {
+            "questionNo": 17,
+            "question": "The main coalfields of India are located in the ",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Damodar Valley ",
+            "option2": "B- Assam Valley ",
+            "option3": "C- Southern States ",
+            "option4": "D- Kashmir Valley "
+        },
+        {
+            "questionNo": 18,
+            "question": "Farakka Barrage has been constructed on ",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Vyas ",
+            "option2": "B- Narmada ",
+            "option3": "C- Ganga ",
+            "option4": "D- Ravi"
+        },
+        {
+            "questionNo": 19,
+            "question": "The Union Council of Ministers is responsible to",
+            "selectedAnswer": "A",
+            "multiple": "Y",
+            "option1": "A- The Parliament ",
+            "option2": "B- The President ",
+            "option3": "C- The Supreme Court ",
+            "option4": "D- The Speaker"
+        },
+        {
+            "questionNo": 20,
+            "question": "Where is the headquarter of Asian Development Bank?",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- Washington ",
+            "option2": "B- Paris ",
+            "option3": "C- Manila ",
+            "option4": "D- Canberra "
+        },
+        {
+            "questionNo": 21,
+            "question": "‘Konica’ is associated with ",
+            "selectedAnswer": null,
+            "multiple": "N",
+            "option1": "A- T.V. ",
+            "option2": "B- Radio ",
+            "option3": "C- Film ",
+            "option4": "D- Tape Recorder"
+        }
+    ],
+    "examCd": "MDMS"
+}
