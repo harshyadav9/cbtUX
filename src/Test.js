@@ -335,23 +335,23 @@ function Test(props) {
         //     // return "Are you sure you want to navigate away?";
         // };
 
-        document.addEventListener(visibilityChange, handleVisibilityChange, false);
+        // document.addEventListener(visibilityChange, handleVisibilityChange, false);
 
-        document.addEventListener('keydown', (e) => {
-            console.log(e.which);
-            // if (e.which === 91 || e.key === "Tab")
-            keys[e.which] = true;
-            if (e.keyCode === 18) e.preventDefault()
-            e.preventDefault();
+        // document.addEventListener('keydown', (e) => {
+        //     console.log(e.which);
+        //     // if (e.which === 91 || e.key === "Tab")
+        //     keys[e.which] = true;
+        //     if (e.keyCode === 18) e.preventDefault()
+        //     e.preventDefault();
 
-        });
+        // });
 
 
-        document.addEventListener('contextmenu', (e) => {
-            console.log(e.which);
+        // document.addEventListener('contextmenu', (e) => {
+        //     console.log(e.which);
 
-            e.preventDefault();
-        });
+        //     e.preventDefault();
+        // });
     }, []);
 
 
@@ -759,10 +759,6 @@ function Test(props) {
 
         }
 
-        axios.post(`cbt/dataUpload/publish`, reviewObj).then(res => {
-
-        });
-
         if(activeQues < state.questionsLength){
             setCurrentQuestion(questionList[(activeStep + 1)]);
             setactiveStep(activeStep + 1);
@@ -940,9 +936,7 @@ function Test(props) {
                 "reviewUnansweredFlag": false
             };
             console.log("obj", obj);
-            axios.post(`cbt/dataUpload/publish`, obj).then(res => {
-
-            });
+          
             localStorage.setItem('questionNo', JSON.stringify(answerKeys));
         }
 
@@ -1005,10 +999,6 @@ function Test(props) {
 
         let regNo = JSON.parse(localStorage.getItem('regNo'));
 
-
-        // axios.post(`cbt/dataUpload/publish`,obj).then(res => {
-        //     localStorage.setItem('questionNo', JSON.stringify(answerKeys));
-        // });
     }
 
     const handleBack = () => {

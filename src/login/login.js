@@ -161,7 +161,7 @@ export default function Login() {
     };
    
    
-    axios.post('/cbt/candidate/login', obj).then(res => {    
+    // axios.post('/cbt/candidate/login', obj).then(res => {    
     localStorage.setItem('regNo', JSON.stringify({ 'registrationNo':regNo}));
     //  var popup = window.open("/test", "popup", "fullscreen");
     // if (popup.outerWidth < window.screen.availWidth || popup.outerHeight < window.screen.availHeight)
@@ -170,14 +170,14 @@ export default function Login() {
     //   popup.resizeTo(window.screen.availWidth, window.screen.availHeight);
     // }
 
-      history.push('/test');
+      history.push('/instructions');
      dispatch({type:'HANDLELOADING' ,isLoading:false});
-     }).catch(err => {
-       console.log("error in login " , err);
-       dispatch({type:'HANDLELOADING' ,isLoading:false});
-       setpasswordErr("Either wrong username or password");
-       setregNoErr("Either wrong username or password");
-     });
+    //  }).catch(err => {
+    //    console.log("error in login " , err);
+    //    dispatch({type:'HANDLELOADING' ,isLoading:false});
+    //    setpasswordErr("Either wrong username or password");
+    //    setregNoErr("Either wrong username or password");
+    //  });
   
   // if (popup.outerWidth < screen.width || popup.outerHeight < screen.height)
   // {

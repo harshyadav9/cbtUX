@@ -241,9 +241,9 @@ function RadioButtonsGroup(props) {
                 dispatch({ type: 'ADD_QUESTION_VALUES', questions: state.questions, reset: false });
             }
             // localStorage.setItem('isReset',JSON.stringify({'reset':false}));
-            axios.post(`cbt/dataUpload/publish`,resetObj).then(res => {
+            // axios.post(`cbt/dataUpload/publish`,resetObj).then(res => {
            
-            });
+            // });
         }
 
     }, [state.reset]);

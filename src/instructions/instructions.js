@@ -10,6 +10,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
+import { useHistory } from 'react-router-dom';
 import { getCurrentTime , evaluateEnableDisableBasedOnTime  , isExamStartingTime} from '../utils/utils';
 // import image from '../../public/'
 const useStyles = makeStyles((theme) => ({
@@ -36,7 +37,20 @@ function Instructions() {
     const classes = useStyles();
     let buttonVal = null;
     const [questionId, setquestionId] = useState({ id: '', type: '' })
-    const [isExamStarted, setIsExamStarted] = useState(false)
+    const [isExamStarted, setIsExamStarted] = useState(false);
+    const history = useHistory();
+
+
+    const openTest = () => {
+           var popup = window.open("/test", "popup", "fullscreen");
+            if (popup.outerWidth < window.screen.availWidth || popup.outerHeight < window.screen.availHeight)
+            {
+            popup.moveTo(0,0);
+            popup.resizeTo(window.screen.availWidth, window.screen.availHeight);
+            }
+
+            history.push('/test');
+    }
     useEffect(() => {
 
         let examStartInterval = setInterval(() => {
@@ -91,7 +105,7 @@ function Instructions() {
              </CardContent>
              <hr/>
              <CardActions>
-                <Button variant="contained"  disabled={!isExamStarted} color="primary">Proceed</Button>
+                <Button variant="contained" onClick={openTest} color="primary">Proceed</Button>
             </CardActions>
         </Card>
         </>
