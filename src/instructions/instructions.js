@@ -58,8 +58,9 @@ const useStyles = makeStyles((theme) => ({
     display: "block",
     background: "#cfd0e9",
   },
-  subheader: {
-    padding: "15px",
+
+  padding: {
+    padding: 15,
   },
 }));
 
@@ -101,7 +102,9 @@ function Instructions() {
     <div className={classes.InstructionsApp}>
       <Header title="INSTRUCTIONS" />
       <Card className={classes.root}>
-        <SubHeader className="subheader " />
+        <div className={classes.padding}>
+          <SubHeader />
+        </div>
         <Divider className={classes.Divider} />
         <CardContent className={classes.content}>
           <Typography variant="h5" component="h5">

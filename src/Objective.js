@@ -731,7 +731,7 @@ function RadioButtonsGroup(props) {
               )}
             </RadioGroup>
           ) : (
-            <FormGroup>
+            <FormGroup className={classes.group}>
               {objective && objective.option1 && (
                 <FormControlLabel
                   control={

@@ -40,7 +40,7 @@ const userStyles = makeStyles({
 function SubHeader(props) {
   const classes = userStyles();
   return (
-    <Box className={`${props.subheader}  ${classes.Box}`}>
+    <Box className={classes.Box}>
       <Avatar variant="rounded" className={classes.Avatar} />
       <div className={classes.CandidateInfo}>
         <div>
