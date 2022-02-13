@@ -15,13 +15,13 @@ import { ExamDataContext } from "../context/ExamDataContext";
 import Timer from "../Timer";
 const userStyles = makeStyles({
   Appbar: {
-    background: "#2a3b64",
+    background: "#034078",
     color: "#fff",
     position: "static",
     borderRadius: "20px 20px 0 0",
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: "12px 20px",
+    padding: "12px 15px",
     alignItems: "center",
     "& h5": {
       fontSize: "1.2rem",

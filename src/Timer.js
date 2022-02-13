@@ -28,9 +28,9 @@ const useStyles = (theme) => ({
       textAlign: "center",
       padding: 0,
       "& div": {
-        // background: "#2a3b64",
+        // background: "#034078",
         background: "#fff",
-        color: "#2a3b64",
+        color: "#034078",
         margin: 0,
         borderRadius: 6,
         // padding: "2px 0px 10px",

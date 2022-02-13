@@ -1,6 +1,6 @@
 body {
   background-color: #b9bace !important;
-  padding: 25px;
+  padding: 18px;
 }
 .App {
   text-align: center;
@@ -39,4 +39,24 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b9bace;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #034078;
 }

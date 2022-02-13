@@ -7,8 +7,8 @@ const userStyles = makeStyles({
     gridGap: 15,
   },
   Avatar: {
-    width: 72,
-    height: 72,
+    width: 65,
+    height: 65,
     backgroundColor: "#cfd0e9",
   },
   CandidateInfo: {
@@ -27,7 +27,7 @@ const userStyles = makeStyles({
       alignItems: "center",
       "& label": {
         width: 115,
-        color: "#2a3b64",
+        color: "#034078",
         fontSize: 14,
         display: "block",
       },

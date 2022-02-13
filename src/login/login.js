@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "1em 0",
     minHeight: "100vh",
     position: "relative",
-    margin: -25,
+    margin: -18,
   },
 
   paper: {
@@ -66,8 +66,14 @@ const useStyles = makeStyles((theme) => ({
     width: "100%", // Fix IE 11 issue.
     marginTop: theme.spacing(1),
   },
-  submit: {
+
+  themeButton: {
     margin: theme.spacing(3, 0, 1),
+    background: "#034078",
+    color: "#fff",
+    "&:hover": {
+      background: "#034078",
+    },
   },
 }));
 
@@ -260,7 +266,7 @@ export default function Login() {
               onClick={submitLoginForm}
               variant="contained"
               color="primary"
-              className={classes.submit}
+              className={classes.themeButton}
             >
               Sign In
             </Button>
@@ -281,8 +287,7 @@ export default function Login() {
               fullWidth
               onClick={clickAdmin}
               variant="contained"
-              color="primary"
-              className={classes.submit}
+              className={classes.themeButton}
             >
               Admin
             </Button>
@@ -302,7 +307,7 @@ export default function Login() {
           <Test />
         </Dialog> */}
 
-        <Box mt={8} className="copyright">
+        <Box className="copyright">
           <Copyright />
         </Box>
       </Container>

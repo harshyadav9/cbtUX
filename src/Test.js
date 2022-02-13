@@ -15,7 +15,8 @@ import SwipeableViews from "react-swipeable-views";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import ArrowForwardSharpIcon from "@material-ui/icons/ArrowForwardSharp";
+import ArrowBackSharpIcon from "@material-ui/icons/ArrowBackSharp";
 import { ExamDataContext } from "./context/ExamDataContext";
 import DisplayQuesCount from "./buttonsGroup/displayQuesCount";
 import testData from "./test.json";
@@ -56,16 +57,28 @@ const useStyles = (theme) => ({
     "& button": {
       fontSize: 13,
       borderRadius: 0,
-      "&:nth-child(2)": {
+      padding: "4px 12px",
+      "&:first-child": {
         borderRadius: "20px 0 0 20px",
+      },
+      "&:nth-child(2)": {
         background: "#d32f2f",
         color: "#fff",
       },
       "&:nth-child(5)": {
-        borderRadius: "0px 20px 20px 0",
         background: "#2e7d32",
         color: "#fff",
       },
+      "&:last-child": {
+        borderRadius: "0px 20px 20px 0",
+      },
+    },
+  },
+  themeButton: {
+    background: "#034078",
+    color: "#fff",
+    "&:hover": {
+      background: "#034078",
     },
   },
   leftContainer: {
@@ -85,14 +98,14 @@ const useStyles = (theme) => ({
     // backgroundColor: 'rgb(0,0,0,0.2)',
   },
   containerStyle: {
-    padding: 20,
-    gridGap: 20,
+    padding: 15,
+    gridGap: 15,
     // background: '#e4e0f9',
     background: "#fff",
     justifyContent: "space-between",
     borderRadius: "0 0 20px 20px",
     display: "grid",
-    gridTemplateColumns: "1fr 300px",
+    gridTemplateColumns: "1fr 320px",
   },
   appbar: {
     alignItems: "center",
@@ -108,9 +121,6 @@ const useStyles = (theme) => ({
     padding: "14px 0px",
     backgroundColor: "#fff",
     color: "black",
-    "&:hover": {
-      backgroundColor: "#ccc",
-    },
   },
   answeredColor: {
     // margin: '12px',
@@ -186,12 +196,12 @@ const useStyles = (theme) => ({
   },
   Box: {
     display: "grid",
-    gridTemplateColumns: "1fr 300px",
+    gridTemplateColumns: "1fr 320px",
     gridGap: 10,
   },
   answersection: {
     flex: "1",
-    marginTop: 20,
+    marginTop: 15,
     border: "1px solid #cfd0e9",
     borderRadius: "6px 6px 0 0",
     overflow: "hidden",
@@ -199,14 +209,13 @@ const useStyles = (theme) => ({
   heading: {
     textAlign: " left",
     fontWeight: "bold",
-    color: "#2a3b64",
+    color: "#034078",
     background: "#cfd0e9",
     margin: 0,
     padding: 12,
     lineHeight: "1",
     fontSize: 14,
     borderRadius: "6px 6px 0 0",
-    marginBottom: 18,
   },
 });
 
@@ -1306,15 +1315,15 @@ function Test(props) {
 
           <AppBar position="static" className={classes.Footer}>
             <Toolbar className={classes.Toolbar}>
-              <IconButton
-                aria-label="left arrow"
+              {/* <Button variant="outlined" onClick={handleBack} endIcon={<ArrowBackIosIcon></ArrowBackIosIcon>} disabled={activeStep === 0}></Button> */}
+              <Button
+                className={classes.themeButton}
+                variant="contained"
                 disabled={activeStep === 0}
                 onClick={handleBack}
               >
-                <ArrowBackIosIcon></ArrowBackIosIcon>
-              </IconButton>
-              {/* <Button variant="outlined" onClick={handleBack} endIcon={<ArrowBackIosIcon></ArrowBackIosIcon>} disabled={activeStep === 0}></Button> */}
-
+                <ArrowBackSharpIcon></ArrowBackSharpIcon>
+              </Button>
               <Button
                 variant="contained"
                 onClick={resetoption}
@@ -1325,13 +1334,17 @@ function Test(props) {
               </Button>
 
               <Button
-                color="primary"
+                className={classes.themeButton}
                 variant="contained"
                 onClick={reviewAndNext}
               >
                 Review & Next
               </Button>
-              <Button color="primary" variant="contained" onClick={saveAndNext}>
+              <Button
+                className={classes.themeButton}
+                variant="contained"
+                onClick={saveAndNext}
+              >
                 Save & Next
               </Button>
 
@@ -1344,13 +1357,15 @@ function Test(props) {
                 Submit
               </Button>
               {/* <Button color="primary" className={classes.rightIcon} onClick={handleNext} endIcon={<ArrowForwardIosIcon></ArrowForwardIosIcon>} disabled={activeStep === maxSteps - 1} variant="contained"></Button> */}
-              <IconButton
-                aria-label="right arrow"
+
+              <Button
+                className={classes.themeButton}
+                variant="contained"
                 disabled={activeStep === maxSteps - 1}
                 onClick={handleNext}
               >
-                <ArrowForwardIosIcon></ArrowForwardIosIcon>
-              </IconButton>
+                <ArrowForwardSharpIcon></ArrowForwardSharpIcon>
+              </Button>
             </Toolbar>
           </AppBar>
 

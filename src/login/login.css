@@ -13,4 +13,8 @@
   position: relative;
   z-index: 1;
   color: #fff;
+  margin-top: 7%;
+}
+.copyright a {
+  color: #fff;
 }

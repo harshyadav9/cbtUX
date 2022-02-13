@@ -30,11 +30,16 @@ const styles = makeStyles((theme) => ({
     width: "100%",
     "& legend": {
       textAlign: " left",
-      color: "#2a3b64",
+      color: "#034078",
       margin: 0,
       marginLeft: 15,
       lineHeight: "1.4",
     },
+  },
+  root: {
+    maxHeight: "calc(100vh - 330px)",
+    overflow: "auto",
+    padding: "10px 10px 5px",
   },
   group: {
     margin: "8px 0 0 0",

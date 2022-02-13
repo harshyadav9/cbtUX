@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     // lineHeight: '4rem'
   },
   InstructionsApp: {
-    maxWidth: 850,
+    maxWidth: 1400,
     margin: "0 auto",
   },
   root: {
@@ -41,9 +41,9 @@ const useStyles = makeStyles((theme) => ({
     height: "100px",
   },
   content: {
-    maxHeight: "calc(100vh -  315px)",
+    maxHeight: "calc(100vh -  265px)",
     overflow: "auto",
-    padding: 20,
+    padding: 15,
     textAlign: "left",
     "& h5": {
       fontSize: "1rem",
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
   footer: {
     display: "block",
-    padding: "17px 20px 17px",
+    padding: "15px 15px ",
     borderTop: "1px solid #cfd0e9",
   },
   Divider: {
@@ -61,6 +61,13 @@ const useStyles = makeStyles((theme) => ({
 
   padding: {
     padding: 15,
+  },
+  themeButton: {
+    background: "#034078",
+    color: "#fff",
+    "&:hover": {
+      background: "#034078",
+    },
   },
 }));
 
@@ -145,7 +152,11 @@ function Instructions() {
         </CardContent>
 
         <CardActions className={classes.footer}>
-          <Button variant="contained" onClick={openTest} color="primary">
+          <Button
+            variant="contained"
+            onClick={openTest}
+            className={classes.themeButton}
+          >
             Proceed
           </Button>
         </CardActions>
