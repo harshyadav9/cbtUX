@@ -60,6 +60,7 @@ const useStyles = (theme) => ({
       padding: "4px 12px",
       "&:first-child": {
         borderRadius: "20px 0 0 20px",
+        minWidth: 0,
       },
       "&:nth-child(2)": {
         background: "#d32f2f",
@@ -71,6 +72,7 @@ const useStyles = (theme) => ({
       },
       "&:last-child": {
         borderRadius: "0px 20px 20px 0",
+        minWidth: 0,
       },
     },
   },
